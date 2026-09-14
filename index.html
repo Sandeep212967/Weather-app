@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="weather-container">
+
+        <h1>🌤️ Weather App</h1><br>
+        <p class="subtitle">Check the current weather of any location</p>
+<br>
+        <!-- Search Box -->
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="locationInput"
+                placeholder="Enter city name e.g. New Delhi"
+            >
+
+            <button id="weatherBtn">
+                Get Weather
+            </button>
+        </div>
+
+        <p id="message"></p>
+
+        <!-- Search History -->
+        <div class="history-section">
+
+            <div class="history-header">
+                <h3>🕘 Search History</h3>
+                <button id="clearHistory">Clear All</button>
+            </div>
+
+            <div id="historyList">
+                <p class="no-history">No recent searches</p>
+            </div>
+
+        </div>
+
+        <!-- Weather Card -->
+        <div class="weather-card" id="weatherCard">
+
+            <div class="location">
+                <h2 id="city">New Delhi</h2><br>
+                <p id="country">India</p><br>
+            </div>
+
+            <img id="weatherIcon" src="http:" alt="Weather"><br>
+
+            <div class="temperature"><br>
+                <span id="temperature">--</span>
+                <span>°C</span>
+            </div><br>
+
+            <h3 id="condition">Weather Condition</h3>
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <span>🌡️</span>
+                    <p>Feels Like</p>
+                    <strong id="feelsLike">--°C</strong>
+                </div>
+
+                <div class="detail">
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <strong id="humidity">--%</strong>
+                </div>
+
+                <div class="detail">
+                    <span>💨</span>
+                    <p>Wind</p>
+                    <strong id="wind">-- km/h</strong>
+                </div>
+
+            </div><br>
+
+            <p class="updated">
+                Last updated: <span id="updated">--</span>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
